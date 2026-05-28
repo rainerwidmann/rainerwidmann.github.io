@@ -1,89 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dr. Rainer Widmann</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Rainer Widmann</title>
 
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 50px 25px;
-      line-height: 1.7;
-      color: #222;
-      background: #fff;
-    }
+<style>
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  max-width:950px;
+  margin:auto;
+  padding:50px 25px;
+  line-height:1.7;
+  color:#222;
+  background:#fff;
+}
 
-    h1 {
-      margin-bottom: 0;
-      font-size: 2.7rem;
-    }
+.header{
+  display:flex;
+  gap:35px;
+  align-items:center;
+  margin-bottom:40px;
+}
 
-    .subtitle {
-      color: #666;
-      font-size: 1.15rem;
-      margin-top: 8px;
-      margin-bottom: 35px;
-    }
+.portrait{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  object-fit:cover;
+  background:#eee;
+  border:1px solid #ddd;
+}
 
-    h2 {
-      margin-top: 50px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #ddd;
-    }
+h1{
+  margin-bottom:0;
+  font-size:2.7rem;
+}
 
-    .links a {
-      margin-right: 18px;
-      text-decoration: none;
-      color: #0056b3;
-    }
+.subtitle{
+  color:#666;
+  font-size:1.15rem;
+  margin-top:8px;
+}
 
-    .links a:hover {
-      text-decoration: underline;
-    }
+h2{
+  margin-top:50px;
+  padding-bottom:8px;
+  border-bottom:1px solid #ddd;
+}
 
-    .project {
-      margin-bottom: 28px;
-    }
+.links a{
+  margin-right:18px;
+  text-decoration:none;
+  color:#0056b3;
+}
 
-    .project-title {
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
+.links a:hover{
+  text-decoration:underline;
+}
 
-    footer {
-      margin-top: 70px;
-      color: #777;
-      font-size: 0.9rem;
-    }
+.project{
+  margin-bottom:28px;
+}
 
-    @media (max-width:700px) {
-      body {
-        padding: 30px 20px;
-      }
+.project-title{
+  font-weight:600;
+  margin-bottom:4px;
+}
 
-      h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+footer{
+  margin-top:70px;
+  color:#777;
+  font-size:0.9rem;
+}
+
+@media (max-width:700px){
+  .header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  h1{
+    font-size:2rem;
+  }
+}
+</style>
 </head>
 
 <body>
 
-<h1>Dr. Rainer Widmann</h1>
+<div class="header">
+  <img src="portrait.jpg" alt="Portrait of Rainer Widmann" class="portrait">
 
-<div class="subtitle">
-Data Scientist | Causal Inference | Experimentation | Applied Econometrics
+  <div>
+    <h1>Dr. Rainer Widmann</h1>
+    <div class="subtitle">
+      Data Scientist | Causal Inference | Experimentation | Applied Econometrics
+    </div>
+
+    <div class="links">
+      <a href="https://github.com/rainerwidmann">GitHub</a>
+      <!-- <a href="LINKEDIN_URL_HERE">LinkedIn</a> -->
+      <!-- <a href="cv.pdf">CV</a> -->
+    </div>
+  </div>
 </div>
 
-<div class="links">
-  <a href="https://www.linkedin.com/in/dr-rainer-widmann-bb0b107b">LinkedIn</a>
-  <!-- Add LinkedIn later -->
-  <!-- Add CV PDF later -->
-</div>
 
 <h2>About</h2>
 
@@ -110,70 +132,47 @@ Northwestern University.
 <h2>Selected Industry Projects</h2>
 
 <div class="project">
-<div class="project-title">
-Supplier Benchmarking and Customer Retention
+  <div class="project-title">
+    Supplier Benchmarking and Customer Retention
+  </div>
+  Developed a causal benchmarking framework that uses batch switches in
+  logistics centers to create random variation in the assignment of suppliers
+  to customers. The framework links supplier-specific product experience to
+  repeat-purchase behavior in order to infer supplier-specific product quality.
 </div>
-
-Developed a causal benchmarking framework leveraging random logistics
-batch switches to link supplier-specific product experience with
-customer repeat-purchase behavior.
-</div>
-
 
 <div class="project">
-<div class="project-title">
-Pricing Experiment Analysis
+  <div class="project-title">
+    Pricing Experiment Analysis
+  </div>
+  Designed and analyzed a pricing experiment to evaluate the relative
+  effectiveness of overfiller promotions, such as 20% more volume for free,
+  and comparable price reductions on sales uplift in an e-commerce setting.
 </div>
-
-Designed and analyzed pricing experiments to estimate the impact of
-promotions and interventions on customer outcomes and business performance.
-</div>
-
 
 <div class="project">
-<div class="project-title">
-Operational Performance and Customer Value
+  <div class="project-title">
+    Operational Performance and Customer Value
+  </div>
+  Built statistical models to quantify how delivery performance and product
+  availability in e-commerce influence repurchase behavior and long-term
+  customer value.
 </div>
-
-Built statistical retention models to quantify how product availability
-and delivery performance influence repurchase behavior and long-term
-customer value.
-</div>
-
 
 <div class="project">
-<div class="project-title">
-Experimental Design for Pet Palatability Studies
-</div>
-
-Conducted power simulations and validation analyses to ensure robust
-experimental designs for pet food palatability studies and reliable
-measurement of treatment effects.
+  <div class="project-title">
+    Experimental Design for Pet Palatability Studies
+  </div>
+  Conducted power simulations and validation analyses to ensure robust
+  experimental designs for testing the palatability of pet food.
 </div>
 
 
 <h2>Publications</h2>
 
 <p>
-Selected publications:
+Selected publications and working papers are available here:
 </p>
-
-<ul>
-<li>
-Motives, Gender, and Experience: Performance Effects in Crowdsourcing Contests
-(Strategy Science, 2025)
-</li>
-
-<li>
-Sexual Misconduct, Accused Scientists, and Their Research
-(Review of Economics and Statistics, 2025)
-</li>
-
-<li>
-The Behavioral Additionality of Government Research Grants
-(International Journal of Industrial Organization, 2024)
-</li>
-</ul>
 
 <p>
 <a href="publications.html">View publications →</a>
@@ -184,6 +183,13 @@ The Behavioral Additionality of Government Research Grants
 
 <p>
 Munich / Salzburg
+</p>
+
+<p>
+GitHub:
+<a href="https://github.com/rainerwidmann">
+github.com/rainerwidmann
+</a>
 </p>
 
 
